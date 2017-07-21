@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.clear:after {
+				clear: both;
+				display: block;
+				content: "";
+			}
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			h2 {
+				color: #fff;
+				padding-top: 20px;
+			}
+			.er {
+				color: #fff;
+				margin-top: 20px;
+			}
+			.big {
+				width: 300px;
+				height: 500px;
+				background: rgba(0,0,0,0.5);
+				margin: 50px auto;
+			}
+			.big-big {
+				padding: 0 20px;
+				
+			}
+			.one {
+				width: 100%;
+				height: 50px;
+				line-height: 50px;
+				position: relative;
+				/**/
+			}
+			.zhu {
+				width: 100%;
+				height: 50px;
+				margin-top: 10px;
+				z-index: 99;
+				background: #fff;
+			}
+			.inp {
+				height: 50px;
+				float: left;
+				outline: none;
+				border: 0;
+			}
+			.danwei {
+				float:left
+				
+			}
+			.jian {
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				float: right;
+			}
+			.xian {
+				width: 100%;
+				height: 150px;
+				display: none;
+				z-index: 1;
+				background: pink;
+				position: absolute;
+				left: 0;
+				top: 50px;
+			}
+			.xian li {
+				padding-left: 10px;
+				height: 30px;
+				background: #fff;
+				line-height: 30px;
+			}
+			.er {
+				
+			}
+			.ss {
+				background: dodgerblue;
+				color: #fff;
+				width: 100%;
+				height: 50px;
+				border: 0;
+				outline: none;
+				margin-top: 20px;
+				z-index: 0;
+			}
+		</style>
+		<script src="js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<div class="big">
+			<div class="big-big">
+				<h2>快速搜索消费贷款</h2>
+				<p class="er after"><span>贷款金额</span>&nbsp;&nbsp;<span>不足一万可用小数表示</span></p>
+				<div class="one clear">
+					<div class="zhu">
+						<input type="text" class="inp" id="inp" value="0" />
+						<span class="danwei">万元</span>
+						<div class="jian" id="jian">▼</div>
+					</div>
+					<ul class="xian" id="xian">
+						<li>1万元</li>
+						<li>2万元</li>
+						<li>3万元</li>
+						<li>4万元</li>
+						<li>6万元</li>
+					</ul>	
+				</div>
+				<p class="er after"><span>贷款期限</span>></p>
+				<div class="one clear">
+					<div class="zhu">
+						<input type="text" class="inp" id="erinp" value="0" />
+						<span class="danwei">万元</span>
+						<div class="jian" id="erjian">▼</div>
+					</div>
+					<ul class="xian" id="erxian">
+						<li>1年</li>
+						<li>2年</li>
+						<li>3年</li>
+						<li>4年</li>
+						<li>6年</li>
+					</ul>	
+				</div>
+				
+				
+			</div>
+			
+			<input type="button" value="搜索一下" class="ss" />
+		</div>
+	</body>
+	<script src="js/new_file.js"></script>
+</html>
